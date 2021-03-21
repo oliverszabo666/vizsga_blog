@@ -25,20 +25,21 @@ const Homepage = () => {
 
   const postEmail = (e) => {
     e.preventDefault();
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: email }),
-    };
-    fetch("./data/data.json", requestOptions)
-      .then((res) => setResp(true))
-      .catch((err) => setResp(false))
-      .finally(() => {
-        setTimeout(() => {
-          showForm(false);
-          console.log(form);
-        }, 3000);
-      });
+    console.log("post email");
+    // const requestOptions = {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify({ email: email }),
+    // };
+    // fetch("./data/data.json", requestOptions)
+    //   .then((res) => setResp(true))
+    //   .catch((err) => setResp(false))
+    //   .finally(() => {
+    //     setTimeout(() => {
+    //       showForm(false);
+    //       console.log(form);
+    //     }, 3000);
+    //   });
   };
 
   return (
