@@ -11,10 +11,71 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: red;
+  background-color: #232323;
+}
+
+body .home {
+  margin: 0 auto;
 }
 
 body .home h1 {
   font-size: 200px;
+  margin: 0 0 50px;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  body .home h1 {
+    font-size: 70px;
+  }
+}
+
+body .home .form-cont {
+  background-color: white;
+  height: 400px;
+  padding: 10px;
+}
+
+body .home .form-cont h2 {
+  font-size: 120px;
+}
+
+@media (max-width: 700px) {
+  body .home .form-cont h2 {
+    font-size: 40px;
+  }
+}
+
+body .home .form-cont .form {
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+}
+
+body .home .form-cont .form input {
+  padding: 10px;
+}
+
+body .post {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+body .post h2 {
+  color: white;
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   iconB: {
-    color: "yellow",
+    color: "white",
     backgroundColor: "black",
     position: "fixed",
     right: "30px",
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   },
   rect: {
     fontSize: "60px",
-    stroke: "yellow",
+    stroke: "white",
   },
 });
 

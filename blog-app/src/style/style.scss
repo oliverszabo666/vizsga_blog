@@ -10,11 +10,57 @@ body {
   padding: 0;
   border: 0;
 
-  background-color: red;
+  background-color: rgb(35, 35, 35);
 
   .home {
+    margin: 0 auto;
+
     h1 {
       font-size: 200px;
+      margin: 0 0 50px;
+      color: white;
+
+      @media (max-width: 700px) {
+        font-size: 70px;
+      }
+    }
+    .form-cont {
+      background-color: white;
+      height: 400px;
+      padding: 10px;
+
+      h2 {
+        font-size: 120px;
+
+        @media (max-width: 700px) {
+          font-size: 40px;
+        }
+      }
+      .form {
+        margin: 50px auto;
+        width: 50%;
+        text-align: center;
+
+        input {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .post {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: black;
+    color: white;
+    margin: 20px 0;
+    padding: 20px;
+
+    h2 {
+      color: white;
+      font-size: 50px;
     }
   }
 }
